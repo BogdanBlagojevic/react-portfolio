@@ -50,51 +50,54 @@ const Hero = () => {
             </motion.p>
 
             <motion.div
-              variants={container(1.5)}
-              initial="hidden"
-              animate="visible"
-              className="flex items-center justify-center gap-4 text-2xl cursor-pointer xs:text-sm"
-            >
-              <a
-                href={resume}
-                download="Resume.pdf"
-                className="flex items-center px-7 py-3 bg-cyan-500 rounded-full text-white shadow-[0_0_5px_cyan,0_0_25px_cyan] hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_50px_cyan,0_0_100px_cyan,0_0_200px_cyan]"
-              >
-                Resume <FiDownload className="ml-2" />
-              </a>
-              <a
-                className="inline-flex items-center justify-center w-10 h-10 bg-transparent border-2 border-cyan-500 rounded-full text-2xl text-cyan-500 no-underline hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_cyan]"
-                href="https://www.linkedin.com/in/bogdan-blagojevi%C4%87-379062243/"
-                target="_blank"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                className="inline-flex items-center justify-center w-10 h-10 bg-transparent border-2 border-cyan-500 rounded-full text-2xl text-cyan-500 no-underline hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_cyan]"
-                href="https://github.com/BogdanBlagojevic"
-                target="_blank"
-              >
-                <FaGithub />
-              </a>
-              <a
-                className="inline-flex items-center justify-center w-10 h-10 bg-transparent border-2 border-cyan-500 rounded-full text-2xl text-cyan-500 no-underline hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_cyan]"
-                href="https://www.instagram.com/bogdan_blagojevic/"
-                target="_blank"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                className="inline-flex items-center justify-center w-10 h-10 bg-transparent border-2 border-cyan-500 rounded-full text-2xl text-cyan-500 no-underline hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_cyan]"
-                href="https://x.com/Bogdansrb1"
-                target="_blank"
-              >
-                <FaSquareXTwitter />
-              </a>
-            </motion.div>
+  variants={container(1.5)}
+  initial="hidden"
+  animate="visible"
+  className="flex  items-center justify-center gap-4 text-2xl cursor-pointer 2xs:text-sm 2xs:flex-col md:flex-row"
+>
+  <a
+    href={resume}
+    download="Resume.pdf"
+    className="flex items-center px-7 py-3 bg-cyan-500 rounded-full text-white shadow-[0_0_5px_cyan,0_0_25px_cyan] hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_50px_cyan,0_0_100px_cyan,0_0_200px_cyan]"
+  >
+    Resume <FiDownload className="ml-2" />
+  </a>
+  
+  <div className="flex items-center justify-center gap-4 2xs:flex-wrap">
+    <a
+      className="inline-flex items-center justify-center w-10 h-10 bg-transparent border-2 border-cyan-500 rounded-full text-2xl text-cyan-500 no-underline hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_cyan]"
+      href="https://www.linkedin.com/in/bogdan-blagojevi%C4%87-379062243/"
+      target="_blank"
+    >
+      <FaLinkedin />
+    </a>
+    <a
+      className="inline-flex items-center justify-center w-10 h-10 bg-transparent border-2 border-cyan-500 rounded-full text-2xl text-cyan-500 no-underline hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_cyan]"
+      href="https://github.com/BogdanBlagojevic"
+      target="_blank"
+    >
+      <FaGithub />
+    </a>
+    <a
+      className="inline-flex items-center justify-center w-10 h-10 bg-transparent border-2 border-cyan-500 rounded-full text-2xl text-cyan-500 no-underline hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_cyan]"
+      href="https://www.instagram.com/bogdan_blagojevic/"
+      target="_blank"
+    >
+      <FaInstagram />
+    </a>
+    <a
+      className="inline-flex items-center justify-center w-10 h-10 bg-transparent border-2 border-cyan-500 rounded-full text-2xl text-cyan-500 no-underline hover:bg-cyan-500 hover:text-white hover:shadow-[0_0_20px_cyan]"
+      href="https://x.com/Bogdansrb1"
+      target="_blank"
+    >
+      <FaSquareXTwitter />
+    </a>
+  </div>
+</motion.div>
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 lg:p-8 lg:m-0 md:m-10 sm:m-10 xs:m-10">
+        <div className="w-full lg:w-1/2 lg:p-8 lg:m-0 md:m-10 sm:m-10 xs:m-10 2xs:mt-20" >
           <div className="flex justify-center">
             <motion.img
               initial={{ x: 100, opacity: 0 }}

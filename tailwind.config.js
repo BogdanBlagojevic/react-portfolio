@@ -8,6 +8,7 @@ export default {
     extend: {
       screens: {
         'xs': '375px', // Dodajte novi breakpoint za 375px
+        '2xs': '300px', // Dodajte novi breakpoint za 375px
       },
     },
   },
